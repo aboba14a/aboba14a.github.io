@@ -1,0 +1,132 @@
+button {
+    color:aquamarine;
+    padding: 20px 22px;
+    border-radius: 19px;
+    background: #7051dd;
+    transition: all 0.2s ease;
+    font-family: cursive;
+    font-size: large;
+    align-content: center;
+}
+button:active {
+    transform: scale(0.81);
+}
+p {
+    font-family: cursive;
+    font-size:x-large;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+input 
+{
+    color:aquamarine;
+    text-decoration-color: aquamarine;
+    background: #7051dd;
+    font-size: large;
+    padding: 19px 22px;
+    border-radius: 19px;
+}
+#calc:active
+{
+    transform: scale(0.91);
+}
+#vlevo:active
+{
+    transform: scale(0.91);
+}
+#calc
+{
+    transition: all 0.2s ease;
+}
+#sbros_a
+{
+    transform: scale(0.91);
+}
+#vlevo
+{
+    transition: all 0.2s ease;
+}
+#vpravo
+{
+    transition: all 0.2s ease;
+}
+#vpravo:active
+{
+    transform: scale(0.91);
+}
+html {
+    background-color: rgb(201, 147, 252);
+}
+  h1 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      text-align: center;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal; text-align: center;
+}
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal; text-align: center;
+}
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal; text-align: center;
+}
+.fig {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center; /* Выравнивание по центру */ 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    color: white;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+}
+.left li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.left li a{
+    text-decoration: none;
+    color: #fff;
+}
+.left li:hover {
+    background: #ccc;
+    transform: scale(1.21);
+}
+.left li {
+    transition: all 0.2s ease;
+}
+.actat:active {
+    transform: scale(1.31);
+}

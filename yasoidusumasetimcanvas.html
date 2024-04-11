@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="nav">
+        <ul class="left">
+          <li><a href="softium.html">Главная страница</a></li>
+          <li><a href="test_na_urovnenie.html">Тест на уравнение</a></li>
+          <li><a href="anketa.html">Анкета для всех</a></li>
+          <li><a href="galereya.html">Галерея</a></li>
+          <li><a href="yasoidusumasetimcanvas.html">Мои рисунки</a></li>
+        </ul>
+      </div>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Мои рисунки</title>
+    <style>
+        canvas {background: #eee; display: block; margin: 0 auto;}
+        .fig {
+                font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center; /* Выравнивание по центру */ 
+        }
+    </style>
+
+</head>
+<body>
+    <p><h1>Всем привет! Это мои рисунки на Canvas. </h1></p>
+    <h1 align="center">Автор этих рисунков:</h1> <p class="fig"> <img src="чудик с короной (настоящий пацан👑).png" width="190"></p>
+    <h1>Мой первый рисунок:</h1>
+<canvas id="mycanvas" width="640" height="480"></canvas>
+<br>
+<h1>Второй рисунок:</h1>
+<canvas id="mycanvasaa" width="640" height="480"></canvas>
+<br>
+<h1>Третий рисунок:</h1>
+<canvas id="mycanvasaaaa" width="640" height="480"></canvas>
+<br>
+<script>
+    var canvas = document.getElementById("mycanvas");
+    var ctx=canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.fillStyle = "#ff0000";
+    ctx.arc(350, 200, 50, 2*Math.PI,0);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.fillStyle = "#0000ff";
+    ctx.arc(345, 182, 10, 2*Math.PI,0);
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.fillStyle = "#f0f0f0";
+    ctx.moveTo(389, 240);
+    ctx.lineTo(118, 20);
+    ctx.lineTo(134, 98);
+    ctx.fill();
+    ctx.closePath();
+    
+    
+    </script>
+<script>
+    var canvas = document.getElementById("mycanvasaa");
+    var ctx=canvas.getContext("2d");
+    ctx.beginPath();
+ctx.ellipse(100, 100, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
+ctx.stroke();
+</script>
+<script>
+     var canvas = document.getElementById("mycanvasaaaa");
+    var ctx=canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.fillStyle = "#ff0000";
+    ctx.rect(190, 190, 190, 190);
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.fillStyle = "#FFFF00";
+    ctx.rect(210, 220, 90, 110);
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.fillStyle = "#804030";
+    ctx.rect(310, 220, 60, 160);
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.fillStyle = "#000000";
+    ctx.arc(330, 300, 10, 2*Math.PI,0);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.fillStyle = "#804030";
+    ctx.moveTo(190, 190);
+    ctx.lineTo(270, 100);
+    ctx.lineTo(380, 190);
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    //ctx.fillStyle = "#000000";
+   // ctx.ellipse(100, 100, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
+    //ctx.fill();
+    //omogiti.closePath();
+    ctx.beginPath();
+    ctx.fillStyle = "#000000";
+    ctx.moveTo(210, 220);
+    ctx.lineTo(210, 110);
+    ctx.lineTo(210, 120);
+    ctx.fill();
+    ctx.closePath();
+</script>
+</body>
+</html>

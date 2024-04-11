@@ -1,0 +1,81 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="style.css">
+  <div class="nav">
+    <ul class="left">
+      <li><a href="softium.html">Главная страница</a></li>
+      <li><a href="test_na_urovnenie.html">Тест на уравнение</a></li>
+      <li><a href="anketa.html">Анкета для всех</a></li>
+      <li><a href="galereya.html">Галерея</a></li>
+      <li><a href="yasoidusumasetimcanvas.html">Мои рисунки</a></li>
+    </ul>
+  </div>
+<title>
+Школа софтиум
+</title>
+</head>
+<script>
+var colorArray = ["red", "orange", "yellow", "green", "blue", "magenta", "black"];
+var i = 0;
+function changeColor() {
+document.body.style.background = colorArray[i];
+i++;
+if( i > colorArray.length - 1){
+i = 0;
+}
+}
+function changeColorBack() {
+document.body.style.background = colorArray[i];
+i--;
+if( i < 0){
+i = colorArray.length - 1;
+}
+}
+</script>
+<script>
+var data = new Date() ;
+var year = data.getFullYear();
+var month = data.getMonth();
+var hours = data.getHours() ;
+var minutes = data.getMinutes() ;
+if (month < 10)
+{month='0' + month}
+var date = data.getDate();
+if (date < 10)
+{date='0' + date}
+if (hours <12)
+document.write (date, '.' , month, '.', year, ' ' , 'Добрый доброе утро!' , ' ' , hours, ':', minutes);
+else if (12 <hours <16)
+document.write (date, '.' , month, '.', year, ' ' , 'Добрый день !' , ' ' , hours, ':', minutes);
+else if (17< hours <22)
+document.write (date, '.' , month, '.', year, ' ' , 'Добрый вечер !' , ' ' , hours, ':', minutes);
+else
+document.write (date, '.' , month, '.', year, ' ' , 'Спокойной ночи.' , ' ' , hours, ':', minutes);
+
+</script>
+<body bgcolor=yellow>
+  <p>
+ <H1 align=center>  Привет! </h1>  <br> 
+ <br>
+<H4 align=center> Я изучаю HTML   <br>
+  
+И это моя первая страничка!<br>
+</p>
+ <img src='test_image.png' width='500'height='350'>
+ <br>
+ <button onclick="changeColor();">Изменить цвет фона+</button>
+  <button onclick="changeColorBack() ;">Изменить цвет фона-</button>
+  <br>
+  <p>
+    <br>
+ <h1>Контакты:</h1>
+  <h1>Адреса электронной почты:</h1>
+  </p>
+<p>
+  <br>
+  <p><p><a href="mailto:eas14ru@yandex.ru" >Яндекс почта</a></p></p>
+  </p><p><a href="mailto:eas14ru@vk.com">ВК почта</a></p> <p><a href="mailto:alex14ioafr5@mail.ru">mail.ru почта</a></p>
+</p>
+</p>
+</body>

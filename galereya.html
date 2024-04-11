@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+<div class="nav">
+    <ul class="left">
+      <li><a href="softium.html">Главная страница</a></li>
+      <li><a href="test_na_urovnenie.html">Тест на уравнение</a></li>
+      <li><a href="anketa.html">Анкета для всех</a></li>
+      <li><a href="galereya.html">Галерея</a></li>
+      <li><a href="yasoidusumasetimcanvas.html">Мои рисунки</a></li>
+    </ul>
+  </div>
+<title> Галерея </title>
+</head>
+<body>
+    <script>
+        var imgs = ['perv.jpg', 'vtor.jpg', 'tret.jpg', 'chet.jpg', 'pyat.jpg', 'sest.jpg', 'sem.jpg', 'vosyem.jpg'];
+        var now = -1;
+
+        function r_click()
+        {
+            if (now < imgs.length-1)
+            {
+            now++;
+
+        }
+        else 
+            {
+                var obj = document.getElementById("img");
+              now = 0;
+              obj.src=imgs[now];
+            }
+        var obj = document.getElementById("img");
+            obj.src=imgs[now];
+        };
+        function l_click()
+        {
+        now--;
+        if( now < 0){
+now = imgs.length - 1;
+}
+            var obj = document.getElementById("img");
+            obj.src=imgs[now];
+        };
+
+    </script>
+    <p style="text-align: center;">
+<img  src = "perv.jpg" width = "80" height="80"> <img src = "vtor.jpg" width = "80" height="80"> <img src = "tret.jpg" width = "80" height="80"> <img src = "chet.jpg" width = "80" height="80"> <img src = "pyat.jpg" width = "80" height="80"> <img src = "sest.jpg" width = "80" height="80"> <img src = "sem.jpg" width = "80" height="80"> <img src = "vosyem.jpg" width = "80" height="80">
+</p>
+<p style="text-align: center;">
+    <img src = "perv.jpg" width = "940" height="780" align="center" id = "img">
+</p>
+<p style="text-align: center;">
+    <img id="vlevo" src = "vlevo.jpg" width = "100" height="75" align="center" onclick = "javascript: l_click()"> <img id="vpravo" src = "vpravo.jpg" width = "100" height="75" align="center" onclick = "javascript: r_click()"> 
+   <br>
+     
+    
+</p>
+</body>
+</html>

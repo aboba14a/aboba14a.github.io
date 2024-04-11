@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <div class="nav">
+        <ul class="left">
+          <li><a href="softium.html">Главная страница</a></li>
+          <li><a href="test_na_urovnenie.html">Тест на уравнение</a></li>
+          <li><a href="anketa.html">Анкета для всех</a></li>
+          <li><a href="galereya.html">Галерея</a></li>
+          <li><a href="yasoidusumasetimcanvas.html">Мои рисунки</a></li>
+        </ul>
+      </div>
+<title> Тест на уравнение </title>
+</head>
+
+<body>
+
+    
+    <h1 align="center"> Тест на уравнение </h1>
+<form>
+    <p style="text-align: center;">
+<label> *Имя:
+<input type="text" name="first _name" placeholder='Ваше имя'>
+</label>
+<br>
+<label> 
+1 задание
+<br>
+x - 100 = 205
+<br>
+x = ...
+<p style="text-align: center;">
+<label> 390+90
+<input type="radio" name="s" value="0">
+</label>
+&nbsp; &nbsp;
+<label> 100+205
+<input type="radio" name="s" value="1">
+</label>
+&nbsp; &nbsp;
+<label> Другое
+<input type="radio" name="s" value="0">
+</label>
+</p>
+<br>
+<label> 
+<p style="text-align: center;">
+2 задание
+<br>
+Ответ с первого задания:
+</p>
+<p style="text-align: center;">
+<label> 305
+<input type="radio" name="a" value="1">
+</label>
+&nbsp; &nbsp;
+<label> 480
+<input type="radio" name="a" value="0">
+</label>
+&nbsp; &nbsp;
+<label> Другое
+<input type="radio" name="a" value="0">
+</label>
+</label>
+</p>
+<p style="text-align: center;">
+<label>
+3 задание
+<br>
+Запиши, что получилось:
+</p>
+<p style="text-align: center;">
+<input type="text" name="tt" value="" > <p style="text-align: center;"> <img src='help_icon.png' width='30'height='30' alt="Подсказка" title="После +, - и = надо пробелы и перед ними тоже нужны пробелы, иначе не засчитается."> </p>
+</label>
+</label>
+</p>
+<br>
+<p style="text-align: center;">
+<span id="a"><input type="button" id="calc" value="Подсчитать результаты"></span>
+<input type="reset" value="Сброс" id="sbros_a">
+</p>
+<p style="text-align: center;"> 
+Итого верных ответов: <input type="text" name="result" readonly>
+</p>
+</form>
+</body>
+<script>
+calc.onclick = function() {
+var myform = this.form;
+var sum = 0;
+if(myform.s.value == '1') sum++;
+if(myform.a.value == '1') sum++;
+if(myform.tt.value == '305 - 100 = 205') sum++;
+myform.result.value = sum;
+}
+</script>
+</html>
