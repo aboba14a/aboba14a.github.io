@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Прыгаем с Оранжевым Котом</title>
+ </head>
+ <body>
+    <main>
+        <h1 style="width: 80vw;">Здравствуйте!</h1><h2> На этой странице вы сможете найти (почти) все проекты, которые я когда-либо показывал на научной конфиренции "ЕсТеЛий".</h2>
+       
+    <div>
+         <h3>2024 год - Разработка сайта на языке HTML</h3>
+        <div class="btns">
+            <button onclick="window.location.href='https://aboba14a.github.io/softium.html';">Ссылка на сайт</button>
+            <button onclick="window.location.href='https://github.com/aboba14a/aboba14a.github.io';">Ссылка на страницу на GitHub</button>
+        </div>
+        <br>
+        <h3>2025 год - Разработка сайта в конструкторе Tilda Publishing</h3>
+        <button onclick="window.location.href='https://liczej43sar.tilda.ws';">Ссылка на сайт</button>
+        
+        <h3>2026 год - Разработка игры на движке Construct 2</h3>
+        <div class="btns">
+            <button onclick="window.location.href='https://aboba14a.github.io/Jumping-With-Orange-Cat';">Ссылка на сайт с игрой</button>
+            <button onclick="window.location.href='https://github.com/aboba14a/Jumping-With-Orange-Cat';">Ссылка на страницу на GitHub</button>
+        </div>
+    </main>
+    <script>
+
+    </script>
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC&display=swap');
+    body {
+        font-family: "Chiron GoRound TC", sans-serif;
+        background-image: url(background.png);
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    main {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .btns {
+        display: flex;            /* Включаем гибкие блоки */
+    justify-content: center;   /* Центрируем кнопки по горизонтали */
+    align-items: flex-start;  /* Выравниваем по верхнему краю */
+    gap: 20px;                /* Фиксированный отступ между кнопками */
+    
+    padding: 20px;
+    }
+
+    button {
+        border: solid transparent;
+        width: 40%;
+        height: 7.5vh;
+        font-size: medium;
+        color: aliceblue;
+        border-radius: 50px;
+        background-color: #5aacc5;
+        box-shadow: 0 0 3px #64beda;
+        transition: all 0.5s ease;
+        overflow: hidden;
+        
+
+        &:hover {
+            box-shadow: 0 0 25px #64beda;
+            background-color: #61bcd8;
+        }
+
+        &:active {
+            box-shadow: 0 0 5px #64beda;
+            background-color: #4c91a7;            
+        }
+    }
+  </style>
+ </body>
+</html>
